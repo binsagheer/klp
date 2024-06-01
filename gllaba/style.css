@@ -1,0 +1,249 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+:root{
+    --prime:#0092E4;
+    --main:white;
+
+}
+
+@font-face {
+    font-family:'prime';
+    src: url('assets/font/Poppins (1)/Poppins-Medium.ttf')
+
+}
+@font-face {
+    font-family:'plight';
+    src: url('assets/font/Poppins (1)/Poppins-Regular.ttf');
+}
+
+
+
+
+body{font-family: 'prime';}
+.navbar {
+    background-color: white;
+    min-height: 70px;padding: 5px 30px;font-family: 'plight';z-index: 9999;
+  }
+  .navbar-brand {
+    color: black;
+  }
+  .navbar-brand span {
+    color:var(--prime);font-family: 'prime'
+  }
+  .nav-link {
+    text-decoration: none;
+    color: black; /* Default color */
+    border-bottom: 2px solid transparent; /* Default border-bottom color */
+    padding: 5px 0; /* Optional: to give some spacing for the border */
+    transition: color 0.3s, border-bottom 0.3s;padding-right: 30px; /* Smooth transition for color and border */
+}
+.navbar-expand-lg .navbar-nav{column-gap: 20px !important;}
+/* Basic button styles */
+.btn {
+    padding: 05px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn-primary {
+    background-color:#0092E4; /* Primary background color */
+    color: white; /* Default text color */
+    border: 1px solid #0092E4; 
+}
+
+.btn-primary:hover {
+    background-color: transparent; /* Make background transparent on hover */
+    color: #0092E4; /* Change text color on hover */
+    border: 1px solid #0092E4; /* Keep the border color */
+}
+
+  .nav-link{font-size: 14px;}
+  .navbar-collapse{flex-grow:0;}
+  .nav-item{position: relative;}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0092E4;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hero {
+    min-height:520px;
+    position: relative;
+    background:url('assets/img/Cash-OutRefinance.com-FHA-Loan-Programs-scaled.webp') no-repeat center center/cover;         
+      
+  }
+  .hero::before {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 8, 38, 0.432); /* Change the color and opacity as needed */
+  }
+   
+  
+
+  
+
+  
+
+  section{padding: 30px 20px}
+  .navbar-expand-lg {justify-content: space-between !important;}
+
+  body p{font-size: 14px;font-family: 'plight';}
+.hero-body{z-index:1;position: relative;}
+.options-heading{color:white;}
+ span{color: var(--prime);}
+ .hero-content h1{color: var(--prime);}
+ .benefits-heading {font-family: 'plight';color: white;}
+.my-card{margin-top: 40px;}
+ .hero-text{line-height: 2.6rem;text-align: center;margin-top: 40px;}
+ .hero-text h1{font-size: 60px;font-weight: 500;}
+ .col-body{background-color: var(--main);border-radius: 9px;padding: 14px 20px;display: flex;justify-content: center;align-items: center;flex-direction: row;column-gap: 20px;}
+
+
+svg{width: 80px;height: 80px;margin-top: -10px}
+ .hero{width: 100%;min-height: 75vh;padding: 20px;background: url(assets/img/Cash-OutRefinance.com-FHA-Loan-Programs-scaled.webp)no-repeat center center/cover;}
+ .service-text{text-align: center;padding: 20px 30px;}
+ .service-text h1{font-size:50px;font-weight: 500;}
+.icon-form{display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;}
+.icon-text{margin-top: 20px;}
+ .icon-body{padding: 10px;margin-top: 60px;}
+ /* .hr{background-color: var(--prime);width: 80%;height: 2px;display: block;margin: auto;} */
+ .icon-container{padding: 0px 40px;}
+ .icon-form svg{background-color:#E1F4FF;border-radius: 50%;padding: 10px;}
+ #icon-hr{border: none !important;}
+
+
+ .icon-form{position: relative;}
+.icon-form::before{content: '';
+top: 15%;
+transform: translate(-50%,-50%);
+
+left: 0;
+position: absolute;
+width:100%;
+height: 2px;
+border-bottom: 2px solid var(--prime);
+z-index: -1;}
+body > section.services > div.container-fluid > div > div > div > div:nth-child(1)::before{border: none;}
+/* =========================== */
+.agility-section {
+  min-height: 550px;
+ 
+  background-color: #0A0721;
+  color:white;
+  display: grid;place-items: 
+ center;
+
+}
+
+
+
+.left-column h1 {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 50px;
+}
+
+.left-column p {
+  margin-top: 20px;
+  font-family: 'plight';
+  font-size: 14px;
+}
+
+.right-column h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.right-column p {
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: white;
+  background-color:var(--prime);
+  padding: 2px 4px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  font-family: 'plight';
+  font-size: 14px;
+}
+
+li i {
+  color: white;
+  background-color:var(--prime);
+ color: #0A0721;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+
+}
+#repeat-testtimonal{margin-top: 40px;}
+.repeat-testtimonal{font-family: "prime";padding-left: 20px;}
+
+
+
+.logo-carousel-section {
+  background-color: white;
+  min-height: 300px;
+  display: grid;place-items: center;
+
+}
+
+/* .owl-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.owl-carousel .item img {
+  max-width: 100%;
+  height: a
+  uto;
+} */
+.logo-carousel-section{overflow: hidden;}
+.owl-carousel .owl-item img{width: 90px !important;}
+
+.item{padding: 40px 10px;border: 0.4px solid rgba(89, 154, 180, 0.274);border-radius: 16px;}
+
+/* .item img{width: 100%;max-width: 70%;} */
+.fixed{width: 100%;min-height: 550px;display: grid;place-items: center;}
+.fixed {background: url(assets/img/Cash-OutRefinance.com-FHA-Loan-Programs-scaled.webp) no-repeat center center/cover;background-attachment: fixed;}
+.ineer-container{max-width: 750px;min-height: 420px;padding: 30px;background-color: rgba(12, 8, 38, 0.432);border-radius: 12px;}
+
+
+
+
+
+
+ @media (min-width:320px) and (max-width:767px){
+  .column{margin-bottom: 30px !important;}
+  
+  .icon-form::before{border: none !important;}
+  .hero-text h1{font-size: 40px;}
+  .service-text h1{font-size: 36px;}
+  
+ }
